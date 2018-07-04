@@ -32,7 +32,7 @@ class LaravelSimpleLdapServiceProvider extends ServiceProvider
             'laravel_simple_ldap'
         );
 
-        $this->app->singleton(LdapService::class, function () use ($simpleLDAPService) {
+        $this->app->singleton(LdapService::class, function () {
             return new LaravelSimpleLdap;
         });
     }
