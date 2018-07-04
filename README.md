@@ -27,10 +27,10 @@ return [
 ```
 php artisan optimize
 ```
-* Set up config with default environment variabel key or publish config for further configuration
+* Set up config with default environment variabel key (LDAP Server hostname / ip-address, LDAP Server Port, Base Distinguished Name/DN, and administrator level user Relative-DN & password) or publish config for further configuration
 ```
 SIMPLE_LDAP_HOST=
-SIMPLE_LDAP_HOST=389
+SIMPLE_LDAP_PORT=389
 SIMPLE_LDAP_BASE_DN=
 SIMPLE_LDAP_PASSWORD=
 SIMPLE_LDAP_USER_RDN=
@@ -58,9 +58,13 @@ LDAP::search ($filter, $extendedBaseDN = "");
 ```
 LDAP::add($rdn, $data);
 ```
-* Modify Record
+* Modify Record (object level)
 ```
 LDAP::modify($rdn, $data);
+```
+* Modify Record (object attribute level)
+```
+LDAP::modifyReplace($rdn, $data);
 ```
 * Delete Record
 ```

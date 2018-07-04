@@ -3,7 +3,7 @@
 return [
     'ldap_host' => env('SIMPLE_LDAP_HOST', ''),
 
-    'ldap_port' => env('SIMPLE_LDAP_HOST', 389),
+    'ldap_port' => env('SIMPLE_LDAP_PORT', 389),
 
     'ldap_base_dn' => env('SIMPLE_LDAP_BASE_DN', ''),
 
