@@ -7,23 +7,30 @@
         "illuminate/support": ">=4.0"
     },
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/daemon144key/laravel-simple-ldap/issues",
+        "source": "https://github.com/daemon144key/laravel-simple-ldap"
+    },
     "authors": [
         {
             "name": "Joel Hutasoit",
             "email": "joel@hutasoit.net"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "TuxDaemon\\LaravelSimpleLdap\\": "src/"
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
         "laravel": {
             "providers": [
                 "TuxDaemon\\LaravelSimpleLdap\\LaravelSimpleLdapServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
 }
