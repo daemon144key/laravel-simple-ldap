@@ -1,0 +1,29 @@
+{
+    "name": "daemon144key/laravel-simple-ldap",
+    "description": "Simple class to wrapping LDAP services.",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": ">=4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joel Hutasoit",
+            "email": "joel@hutasoit.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "TuxDaemon\\LaravelSimpleLdap\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TuxDaemon\\LaravelSimpleLdap\\LaravelSimpleLdapServiceProvider"
+            ]
+        }
+    }
+}
